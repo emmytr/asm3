@@ -1,0 +1,139 @@
+/* General Css rule for project charter page */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  color: #343a40;
+  font-family: "Inter", sans-serif;
+}
+
+.row {
+  border-bottom: solid 1px rgba(0, 0, 255, 0.3);
+  margin: 10px;
+}
+
+.title {
+  font-size: large;
+  font-weight: bold;
+  color: blue;
+}
+
+p {
+  margin: 0;
+}
+
+div > p:first-child {
+  font-weight: bold;
+}
+.table {
+  margin: 0;
+}
+
+i {
+  font-size: 25px;
+}
+
+#scope > .row,
+#pri > .row,
+#team > .row,
+#tl > .row {
+  border-bottom: none;
+}
+
+#goal > .title,
+#scope > .title,
+#pri > .title,
+#team > .title,
+#tl > .title {
+  border-bottom: solid 1px blue;
+}
+
+.timeline-content {
+  border-bottom: dashed 1px blue;
+}
+
+/* apply to large screen */
+@media only screen and (min-width: 992px) {
+  .table {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    gap: 0;
+  }
+
+  #timeline-sect {
+    grid-area: 1/3 / span 2 / span 1;
+  }
+
+  .summary {
+    border: solid 5px blue;
+  }
+
+  #goal-sect,
+  #scope-sect,
+  #team-sect,
+  #pri-sect,
+  #timeline-sect {
+    border: solid 5px blue;
+    border-collapse: collapse;
+  }
+}
+
+/* apply to medium screen */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .table {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .summary {
+    border: solid 5px blue;
+  }
+
+  #goal-sect,
+  #scope-sect,
+  #team-sect,
+  #pri-sect,
+  #timeline-sect {
+    border: solid 5px blue;
+    border-collapse: collapse;
+  }
+
+  #goal.container > div > i,
+  #team.container > div > i,
+  #pri.container > div > i {
+    text-align: center;
+  }
+}
+
+/* apply to small screen */
+@media only screen and (max-width: 767px) {
+  .table {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .summary {
+    border: solid 5px blue;
+  }
+
+  #goal-sect,
+  #scope-sect,
+  #team-sect,
+  #pri-sect,
+  #timeline-sect {
+    border: solid 5px blue;
+    border-collapse: collapse;
+  }
+
+  #goal.container > div > i,
+  #team.container > div > i,
+  #pri.container > div > i {
+    text-align: center;
+  }
+}

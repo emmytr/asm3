@@ -1,0 +1,644 @@
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    color: #343a40;
+    font-family: "Inter", sans-serif;
+  }
+
+  .bg-grey {
+    background: #f7f7f7;
+  }
+
+  /* navbar background color setting  */
+  .bg-grey.about {
+    background: linear-gradient(90deg, #f7f7f7 50%, #9d999026 50%);
+    height: 350px;
+  }
+
+  section > .container {
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 30px 50px;
+  }
+
+  #nav-bar {
+    text-align: center;
+  }
+
+  /* banner background setting  */
+  #banner {
+    height: 500px;
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.6),
+        rgba(34, 34, 34, 0.6)
+      ),
+      url(../images/banner.jpg);
+    background-size: cover;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .banner-content > h2 {
+    font-weight: 500;
+    font-size: 50px;
+  }
+
+  .banner-content > .span {
+    font-weight: lighter;
+  }
+
+  /* navbar setting */
+  #nav-bar > .container {
+    padding: 0px;
+  }
+  #nav-bar > .container {
+    display: block;
+  }
+  #nav-bar > .container > a {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    padding: 0px 20px;
+    font-size: 14px;
+    line-height: 50px;
+    border-left: solid 0.5px #e1e4e7;
+    vertical-align: middle;
+  }
+
+  #nav-bar > .container > :last-child {
+    border-right: solid 0.5px #e1e4e7;
+  }
+
+  #nav-bar > .container > :nth-child(4) {
+    vertical-align: middle;
+    width: 20px;
+    line-height: 20px;
+    padding-top: 5px;
+    font-weight: bold;
+  }
+
+  #nav-bar > .container > a > p {
+    font-size: 20px;
+    /* padding-bottom: 5px; */
+  }
+
+  #nav-bar > .container > a > span {
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  /* "About" section setting */
+  #about {
+    margin: 0px;
+    padding: 0px;
+  }
+  #about > .pagination {
+    margin: 0px;
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #about > .pagination > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #target {
+    padding-top: 20px;
+  }
+
+  #target {
+    padding-right: 40px;
+    padding-left: 40px;
+    line-height: 25px;
+    align-content: center;
+  }
+
+  #personal-info {
+    padding-right: 20px;
+    padding-left: 0px;
+    line-height: 25px;
+  }
+
+  #target > .section-title,
+  #personal-info > .section-title {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  #personal-info {
+    padding-bottom: 15px;
+    font-size: small;
+    padding-left: 40px;
+  }
+
+  #personal-info > ul {
+    list-style-type: none;
+  }
+
+  #personal-info > ul > li > span {
+    font-weight: 600;
+  }
+
+  #personal-info > .icons {
+    color: dodgerblue;
+  }
+
+  #target > p {
+    font-size: small;
+  }
+  /* job info setting */
+
+  /* working experience setting */
+  #job-info > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-rows: min-content;
+  }
+
+  #job-info > .container > div {
+    border: 1px solid #9d99903d;
+    /* vertical-align: middle; */
+  }
+
+  #job-info > .container > .exp {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+  }
+  .exp {
+    grid-row-end: span 3;
+  }
+
+  .exp > .section-content {
+    grid-area: 2/1 / span 1 / span 2;
+    padding-top: 20px;
+  }
+
+  .exp > i {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .exp > h1 {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* edit a blue box for the year of the latest job */
+
+  .exp1year {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .exp1year > :nth-child(2) {
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;
+  }
+
+  /* font style setting for education */
+
+  .exp > div > div > div > ul {
+    padding-top: 5px;
+  }
+
+  .exp > div > div > div > :first-child {
+    font-weight: bold;
+  }
+
+  .exp > div > div > div > :nth-child(2) {
+    font-style: italic;
+    font-size: 15px;
+  }
+  .exp > div > div {
+    padding-bottom: 20px;
+  }
+
+  /* Education setting */
+  #job-info > .container > .edu {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 30px auto;
+  }
+
+  .edu > .section-content {
+    grid-area: 2/1 / span 1 / span 2;
+    padding-top: 20px;
+  }
+
+  .edu > i {
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .edu > h1 {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30px;
+  }
+
+  .edu > div > div > div > :first-child {
+    font-weight: bold;
+  }
+
+  .edu > div > div > div > :nth-child(2) {
+    font-style: italic;
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  .edu > div > div {
+    padding-bottom: 20px;
+  }
+
+  /* Activities section setting */
+  #job-info > .container > .act {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 30px auto;
+  }
+
+  .act > .section-content {
+    grid-area: 2/1 / span 1 / span 2;
+    padding-top: 20px;
+  }
+
+  .act > i {
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .act > h1 {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30px;
+  }
+
+  .act > div > div > div > :first-child {
+    font-weight: bold;
+  }
+
+  .act > div > div > div > :nth-child(2) {
+    font-style: italic;
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  .act > div > div {
+    padding-bottom: 20px;
+  }
+
+  /* hobby section setting */
+  #job-info > .container > .hob {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 30px auto;
+  }
+
+  .hob > .section-content {
+    grid-area: 2/1 / span 1 / span 2;
+    padding-top: 20px;
+  }
+
+  .hob > i {
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hob > h1 {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30px;
+  }
+
+  .hob > div > ul {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .hob > div > ul > li > i {
+    width: 40px;
+    height: 40px;
+    color: dodgerblue;
+    padding: 10px;
+    border: solid 0.01px dodgerblue;
+    border-radius: 50%;
+  }
+
+  /* language section setting */
+  #job-info > .container > .lan {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 30px auto;
+  }
+
+  .lan > .section-content {
+    grid-area: 2/1 / span 1 / span 2;
+    padding-top: 20px;
+  }
+
+  .lan > i {
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .lan > h1 {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30px;
+  }
+
+  /* languague & skill scale setting  */
+  .ski > div > div > span,
+  .lan > div > ul > span {
+    background: rgba(128, 128, 128, 0.622);
+    display: inline-block;
+    height: 2px;
+    margin-top: 0;
+    margin-right: 10px;
+    width: 45px;
+  }
+
+  .ski > div > div > .blue,
+  .lan > div > ul > .blue {
+    background: #199cdb;
+  }
+  /* skill section setting */
+  #job-info > .container > .ski {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 30px auto;
+  }
+
+  .ski > .section-content {
+    grid-area: 2/1 / span 1 / span 2;
+    padding-top: 20px;
+  }
+
+  .ski > i {
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ski > h1 {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30px;
+  }
+
+  .edu,
+  .hob,
+  .ski {
+    grid-auto-rows: min-content;
+  }
+
+  /* certificate setting */
+  #certificate > div > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 20px;
+  }
+
+  #certificate > div > div > div {
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: 1fr 0.6fr;
+  }
+
+  #certificate > div > div > div > img {
+    width: 100%;
+  }
+
+  #certificate > div > div > div > div > :first-child {
+    font-weight: bold;
+  }
+
+  .cert1,
+  .cert3 {
+    padding-right: 15px;
+  }
+
+  .cert2,
+  .cert4 {
+    padding-left: 15px;
+  }
+
+  .cert1,
+  .cert2 {
+    border-bottom: solid 0.5px #d6c08d;
+  }
+
+  .cert1,
+  .cert3 {
+    position: relative;
+  }
+
+  .cert1::after,
+  .cert3::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0.5px;
+    background-color: #d6c08d;
+    bottom: 0;
+    right: 0;
+  }
+
+  .cert1::after {
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 0.5px;
+    background-color: #d6c08d;
+    top: 0;
+    right: 0;
+  }
+  /* project section setting */
+
+  #project > div > h1 {
+    padding-bottom: 20px;
+  }
+  #project > div > div {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    column-gap: 10px;
+    justify-content: center;
+  }
+
+  #project > div > div > div > img {
+    width: 100%;
+  }
+  .projname,
+  .title,
+  .table {
+    border: solid 0.5px hsla(42, 46%, 70%, 0.383);
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .title > p:nth-child(2) {
+    grid-area: 2/2 / span 1 / span 1;
+  }
+
+  .title > .projname {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: none;
+  }
+  .table {
+    border: solid 0.5px hsla(42, 46%, 70%, 0.383);
+    border-top: none;
+    border-collapse: collapse;
+  }
+
+  td {
+    border: solid 0.5px hsla(42, 46%, 70%, 0.383);
+    border-top: none;
+    padding: 10px;
+    width: 100%;
+  }
+
+  tr > :first-child {
+    vertical-align: top;
+    width: 160px;
+  }
+  .title > p {
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+  #project > div > div > div > div > p:first-child {
+    padding-left: 10px;
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius: 10px;
+    width: 50px;
+
+    text-align: center;
+  }
+
+  /* footer setting */
+
+  #footer > div > ul > li {
+    display: inline-block;
+    padding-right: 50px;
+  }
+  #footer > div > ul {
+    text-align: center;
+  }
+  #footer > div > ul > li > a > i {
+    color: dodgerblue;
+    font-size: 30px;
+    padding-right: 5px;
+    vertical-align: middle;
+  }
+
+  /* edit link element to orginal format */
+  a:visited,
+  a:link,
+  a:active {
+    text-decoration: none;
+    color: #343a40;
+  }
+
+  a:hover {
+    color: #1087ff;
+    text-decoration: underline;
+  }
+
+  /* Profile picture setting on nav-bar */
+  #nav-bar > .container {
+    position: relative;
+  }
+
+  #nav-bar > .container > img {
+    position: absolute;
+    width: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    border-radius: 50%;
+    border: solid 8px #fff;
+  }
+
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+}
